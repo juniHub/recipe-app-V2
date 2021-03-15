@@ -1,0 +1,148 @@
+.search-box {
+
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #fef6e4;
+    border-radius: 30px;
+    border-bottom: 3px solid #f582ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+
+    color: black;
+    background-color: #fef6e4;
+
+    font-size: 20px;
+    font-weight: 200;
+    transition: 0.2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search-box .search-bar:focus {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+.advise-box {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 280px;
+    background: #fef6e4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 10px 10px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+
+}
+
+.button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: 1;
+    background-color: #f582ae
+
+}
+
+.button span {
+    color: black;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 0.7px;
+}
+
+.button:hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+
+.button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
