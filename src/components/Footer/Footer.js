@@ -1,13 +1,31 @@
 import React from 'react';
-
 import classes from './Footer.module.css';
-import Logo from '../../elements/Logo/Logo';
 
 const footer = (props) => {
     return(
-        <footer className={classes.Footer}>
-            <Logo colorScheme='dark' clicked={props.onClickHandler} />
-            <div className={classes.Separator}></div>
+        <footer className={ classes.Footer }>
+            <div className={classes.FooterHeading}>
+                Daily Advise
+              
+            </div>
+            
+         
+            <div className={ classes.Separator }>
+                { props.children }
+
+           
+                <span>
+                    <a href="https://icons8.com/icon/64215/sun">Sun icon by Icons8</a>
+                 </span>
+
+                             
+            </div>
+
+                  
+
+           
+           
+            
         </footer>
     );
 }

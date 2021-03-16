@@ -6,13 +6,8 @@
     background: #f582ae;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     -webkit-transition: background-color .5s ease-out;
     -ms-transition: background-color .5s ease-out;
     transition: background-color .5s ease-out;
-}
-@media only screen and (min-width:600px) {
-    .Header {
-        justify-content: center;
-    }
 }

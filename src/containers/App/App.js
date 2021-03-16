@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { MoonLoader } from 'react-spinners';
-import Advise from '../../Advise';
+import Advise from '../../Advise/Advise';
 
 import classes from './App.module.css';
-import assetMapping from '../../assets/assetMapping.json';
+//import assetMapping from '../../assets/assetMapping.json';
 import Card from '../../elements/Card/Card';
-import Header from '../../components/Header/Header';
+
 import Footer from '../../components/Footer/Footer';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import WeatherDetails from '../../components/WeatherDetails/WeatherDetails';
 import Preview from '../../components/Preview/Preview';
 import ErrorNotice from '../../components/ErrorNotice/ErrorNotice';
 
-class App extends Component {
+class App extends Component
+{
+  
+ 
 
   state = {
     searchBarInput: '',
@@ -82,10 +85,14 @@ class App extends Component {
     });
   }
 
-  render() {
+  render ()
+  {
+    
 
     // Conditionally render card content
     let cardContent = <Preview />;
+    let cardAdvise = <Advise />;
+
     if (this.state.loading) {
       cardContent = <MoonLoader />;
     } else if (this.state.error) {
@@ -95,14 +102,8 @@ class App extends Component {
       cardContent = <WeatherDetails data={this.state.weatherDetails} />;
     }
 
-   return (
-      <div className={classes.AppWrapper}>
-        <Header
-          color={assetMapping.colors[
-            // Set header color based on weather condition; if error, set color to red
-            (this.state.error) ? "error" : this.state.weatherDetails.description
-          ]}
-          onClickHandler={this.tryAgainHandler} />
+    return (
+   
         <main className={classes.AppMain}>
           <SearchBar
             value={this.state.searchBarInput}
@@ -112,11 +113,17 @@ class App extends Component {
           <Card>
             {cardContent}
          </Card>
+
+         <Footer>
+           { cardAdvise }
+          </Footer>
+          
       
        </main>
-            <Advise/>
-        
-      </div>
+
+     
+   
+   
     );
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './App.css'
+import './Advise.css'
 
 
 class Advise extends React.Component {
@@ -26,14 +26,15 @@ class Advise extends React.Component {
 
   render() {
     return (
-      <div className="advise-box">
-        <div className="card">
+      
+        <div className="advise-box">
           <h4 className="heading">{this.state.advice}</h4>
           <button className="button" onClick={this.fetchAdvice}>
             <span>GET ANOTHER ADVICE!</span>
           </button>
+     
         </div>
-      </div>
+ 
     );
   }
 }

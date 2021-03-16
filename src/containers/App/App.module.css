@@ -3,12 +3,27 @@
     padding: 0;
 }
 .AppMain {
-    height: 640px;
+    height: 480px;
     margin: 0;
     padding: .5rem 1.5rem;
 }
-@media only screen and (min-width:600px) {
-    .AppMain {
-        height: 460px;
-    }
+
+.Header {
+    margin: 0;
+    padding: .5rem 2rem;
+    height: 100%;
+    background: #f582ae;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-transition: background-color .5s ease-out;
+    -ms-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+.themeBtn{
+    border: none;
+    font-size: 30px;
+    background: none;
+    color: #232946;
 }

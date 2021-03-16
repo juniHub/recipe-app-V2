@@ -1,13 +1,23 @@
 import React from 'react';
-
 import classes from './Header.module.css';
-import Logo from '../../elements/Logo/Logo';
 
-const header = (props) => {
-    return(
-        <header className={classes.Header} style={{backgroundColor: props.color}}>
-            <Logo colorScheme={'light'} clicked={props.onClickHandler} />
+
+
+ 
+
+const header = ( props ) =>
+{
+    
+    return (
+       
+        <header className={classes.Header}>
+            
+        <h1 className="">
+            <img alt="weather-icon" src="https://img.icons8.com/clouds/100/000000/sun.png"/>
+        </h1>
+    
         </header>
+            
     ); 
 }
 

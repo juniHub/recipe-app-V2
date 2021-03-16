@@ -10,3 +10,16 @@ body {
 
 
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  font-size: small;
+
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
