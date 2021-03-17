@@ -4,7 +4,7 @@
     height: 100%;
     width: 100%;
     max-width: 300px;
-    min-height: 2.5rem;
+    min-height: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .FooterHeading {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 }
 
 .Separator {

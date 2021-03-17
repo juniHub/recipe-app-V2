@@ -2,7 +2,6 @@ import React from 'react';
 
 import App from './containers/App/App';
 import classes from './containers/App/App.module.css';
-import Header from './components/Header/Header';
 
 import styled from "@emotion/styled";
 import { useTheme } from "./Theme/ThemeContext";
@@ -30,12 +29,12 @@ const Main = () =>
             <img alt="weather-icon" src="https://img.icons8.com/clouds/100/000000/sun.png"/>
             </h1>
             
-            <button className={ classes.themeBtn } onClick={() => themeState.toggle()}>
+            <button aria-label="Left Align" aria-hidden="true" className={ classes.themeBtn } onClick={() => themeState.toggle()}>
       
         {themeState.dark ?   
-         <i class="fas fa-cloud-sun"></i>
+         <i className="fas fa-cloud-sun"></i>
         
-        :  <i class="fas fa-cloud-moon"></i>}
+        :  <i className="fas fa-cloud-moon"></i>}
         </button>
        
         </header>

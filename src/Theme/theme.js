@@ -1,6 +1,6 @@
 
 const dark = "#232946";
-const light = "#fef6e4";
+const light = "#fffffe";
 
 const themeLight = {
   background: light,
