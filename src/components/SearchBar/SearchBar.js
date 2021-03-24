@@ -11,7 +11,7 @@ const searchBar = (props) => {
           <input
             type="text"
             className={classes.searchBar}
-            placeholder="Enter the city name"
+            placeholder="Enter the recipe"
             onChange={ props.onChangeHandler }
             value={props.value} 
             onKeyPress={ props.onClickHandler }

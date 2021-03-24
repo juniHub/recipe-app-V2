@@ -23,3 +23,120 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
+
+img {
+  width: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.form-button {
+  border: solid 2px #f582ae;
+  color: lightslategray;
+  background: transparent;
+  padding: 0.4rem 0.9rem;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+}
+
+
+.active-recipe {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.active-recipe-img {
+  height: 500px !important;
+}
+
+.active-recipe-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+  color: #001858;
+}
+
+.active-recipe-website {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  color: #8bd3dd;
+  text-decoration: none;
+}
+
+.active-recipe-website:hover {
+  border-bottom: 3px solid #001858;
+  color: #172c66;
+}
+
+.alert {
+  position: relative;
+  background-color: #f3d2c1;
+  width: calc(100% - 0.4rem);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 2rem auto;
+ 
+}
+
+.alert h3 {
+  font-size: 1rem;
+  color: orangered;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.recipes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.ingredient-list {
+  margin-top: 1rem;
+  background-color: #f3d2c1;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.ingredient-list li {
+  margin: 0.5rem 0;
+  list-style-type: none;
+}
+
+.ingredient-text {
+  font-size: 1.5rem;
+  color: #001858;
+}
+
+.ingredient-weight {
+  color: #f582ae;
+  font-size: 1.3rem;
+}
+
+.active-recipe-button {
+  border: solid 2px #f582ae;
+  color: #172c66;
+  background: transparent;
+  padding: 0.2rem 0.9rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}

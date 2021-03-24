@@ -1,4 +1,4 @@
-.WeatherDetailsWrapper {
+.RecipeWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,14 +12,6 @@
     -ms-animation: fadein 2s; /* Internet Explorer */
     -o-animation: fadein 2s; /* Opera < 12.1 */
     animation: fadein 2s;
-}
-.WeatherIconWrapper {
-    align-items: center;
-    justify-content: center;
-}
-.WeatherDataWrapper {
-    align-items: center;
-    justify-content: center;
 }
 
 @keyframes fadein {

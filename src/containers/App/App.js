@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import Axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 import { MoonLoader } from 'react-spinners';
 import Advise from '../../Advise/Advise';
 
@@ -8,124 +10,82 @@ import Card from '../../elements/Card/Card';
 
 import Footer from '../../components/Footer/Footer';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import WeatherDetails from '../../components/WeatherDetails/WeatherDetails';
+import Recipe from '../../components/Details/Recipe';
 import Preview from '../../components/Preview/Preview';
 import ErrorNotice from '../../components/ErrorNotice/ErrorNotice';
 
-class App extends Component
-{
-  
- 
+import Alert from '../../components/Alert';
 
-  state = {
-    searchBarInput: '',
-    weatherDetails: {
-      temperature: null,
-      description: ''
-    },
-    loading: false,
-    error: false
-  }
+function App() {
+  const [query, setQuery] = useState('');
+  const [recipes, setRecipes] = useState([]);
+  const [alert, setAlert] = useState('');
 
-  // Update state with current search bar input
-  searchBarHandler = (e) => {
-    this.setState({
-      searchBarInput: e.target.value
-    })
-  }
+  const APP_ID = process.env.REACT_APP_EDAMAM_ID;
+  const APP_KEY = process.env.REACT_APP_EDAMAM_KEY;
 
-  // Reset state after clicking on Logo or Try Again button
-  tryAgainHandler = () => {
-    this.setState({
-      searchBarInput: '',
-      weatherDetails: {},
-      error: false
-    })
-  }
+  const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
-  // Fetch weather information and update state
-  setWeather = () => {
-    const city = this.state.searchBarInput;
-    const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
-    const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
-    const URL = API_URL + `?q=${city}&appid=${API_KEY}&units=metric`;
-    this.setState({
-      weatherDetails: {},
-      loading: true,
-      error: false
-    }, () => {
-      // Executed as callback function
-      fetch(URL)
-        .then(res => res.json())
-        .then(data => {
-          // If city exists, update weather details
-          if(data.cod === 200) {
-            this.setState({
-              weatherDetails: {
-                cityName: data.name,
-                countryName: data.sys.country,
-                temperature: data.main.temp,
-                main: data.weather[0].main,
-                description: data.weather[0].description
-              },
-              loading: false
-            });
-          } else {
-            // If city doesn't exist, throw error
-            throw data.cod
-          }
-        })
-        .catch(err => {
-          console.log(err);
-          this.setState({
-            loading: false,
-            error: true
-          });
-        });
-    });
-  }
-
-  render ()
-  {
-    
-
-    // Conditionally render card content
-    let cardContent = <Preview />;
-    let cardAdvise = <Advise />;
-
-    if (this.state.loading) {
-      cardContent = <MoonLoader />;
-    } else if (this.state.error) {
-      cardContent = <ErrorNotice onClickHandler={this.tryAgainHandler} />;
-    } else if (this.state.weatherDetails.temperature && this.state.weatherDetails.description !== '') {
-      // Display weather information if temperature and description exists
-      cardContent = <WeatherDetails data={this.state.weatherDetails} />;
+  const getData = async () => {
+    if (query !== '') {
+      const result = await Axios.get(url);
+      if (!result.data.more) {
+        return setAlert('No food with such name');
+      }
+      console.log(result);
+      setRecipes(result.data.hits);
+      setQuery('');
+      setAlert('');
+    } else {
+      setAlert('Please fill the form');
     }
+  };
 
-    return (
-   
-        <main className={classes.AppMain}>
-          <SearchBar
-            value={this.state.searchBarInput}
-            onChangeHandler={this.searchBarHandler}
-            onClickHandler={this.setWeather}
-            error={this.state.error} />
-          <Card>
-            {cardContent}
-         </Card>
+  const onChange = (e) => setQuery(e.target.value);
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    getData();
+  };
+
+  const cardAdvise = <Advise />;
+
+  return (
+    <div className={classes.AppMain}>
+    
+      
+
+      <form onSubmit={onSubmit} style={{ marginBottom: '2rem' }}>
+        { alert !== '' && <Alert alert={ alert } /> }
+         <div className={classes.SearchBarWrapper}>
+  
+        <div className={ classes.searchBox }>
+        
+        <input
+          className={classes.searchBar}
+          type="text"
+          name="query"
+          onChange={onChange}
+          value={query}
+          autoComplete="off"
+          placeholder="Search Recipe Here"
+          />
+            
+        </div>
+
+        </div>
+        <button className="form-button">Search</button>
+      </form>
+ 
+      <div className="recipes">
+        {recipes !== [] &&
+          recipes.map((recipe) =><Card> <Recipe key={uuidv4()} recipe={recipe} /></Card>)}
+      </div>
          <Footer>
            { cardAdvise }
           </Footer>
-          
-      
-       </main>
-
-     
-   
-   
-    );
-  }
+    </div>
+  );
 }
 
 export default App;
