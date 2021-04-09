@@ -18,7 +18,7 @@ const useEffectDarkMode = () => {
   React.useEffect(() => {
     const lsDark = localStorage.getItem("dark") === "true";
     setThemeState({ ...themeState, dark: lsDark, hasThemeMounted: true });
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return [themeState, setThemeState];
 };

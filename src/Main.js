@@ -32,9 +32,9 @@ const Main = () =>
             <button aria-label="Left Align" aria-hidden="true" className={ classes.themeBtn } onClick={() => themeState.toggle()}>
       
         {themeState.dark ?   
-         <i className="fas fa-cloud-sun"></i>
+         <i class="fas fa-adjust"></i>
         
-        :  <i className="fas fa-cloud-moon"></i>}
+        :  <i class="fas fa-adjust"></i>}
         </button>
        
         </header>

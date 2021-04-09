@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-import { MoonLoader } from 'react-spinners';
 import Advise from '../../Advise/Advise';
 
 import classes from './App.module.css';
@@ -9,10 +8,7 @@ import classes from './App.module.css';
 import Card from '../../elements/Card/Card';
 
 import Footer from '../../components/Footer/Footer';
-import SearchBar from '../../components/SearchBar/SearchBar';
 import Recipe from '../../components/Details/Recipe';
-import Preview from '../../components/Preview/Preview';
-import ErrorNotice from '../../components/ErrorNotice/ErrorNotice';
 
 import Alert from '../../components/Alert';
 
