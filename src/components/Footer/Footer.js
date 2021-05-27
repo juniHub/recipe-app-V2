@@ -15,7 +15,9 @@ const footer = (props) => {
 
            
                 <span>
-                    <a href="https://icons8.com/icon/80731/cooking-book" target="_blank" rel="noopener noreferrer">Cooking Book icon by Icons8</a>
+                    Cooking Book icon by <a href="https://icons8.com/icon/80731/cooking-book" target="_blank" rel="noopener noreferrer">Icons8</a>
+                    <br/>
+                    Made with React by <a href="https://hellojuninguyen.netlify.app/" target="_blank" rel="noopener noreferrer">Juni Nguyen</a> 2021
                  </span>
 
                              

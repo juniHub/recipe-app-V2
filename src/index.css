@@ -140,3 +140,7 @@ button:focus {
   font-weight: 500;
   cursor: pointer;
 }
+
+footer a{
+  color: hotpink;
+}
