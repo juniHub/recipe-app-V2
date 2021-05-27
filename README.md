@@ -5,6 +5,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/32d5dd9a-f342-402d-bda7-44f6f58865a6/deploy-status)](https://app.netlify.com/sites/juni-todo-list/deploys)
 
 
 
@@ -84,14 +85,10 @@
 
 ### Built With
 
-* [ExpressJS](https://expressjs.com/)
-* [Handlebars View Engine](https://handlebarsjs.com/)
-* [MongoDB](https://www.mongodb.com/)
-* [CKeditor](https://ckeditor.com/)
-* [Cloudinary](https://cloudinary.com/)
-* [MaterializeCSS](https://materializecss.com/)
-* [Algolia Search](https://www.algolia.com/)
-* [Deployed on Heroku](https://id.heroku.com/)
+* [ReactJS](https://reactjs.org/)
+* [Edamam API](https://developer.edamam.com/?gclid=Cj0KCQjwhr2FBhDbARIsACjwLo1T2n-keQiInQDW_5fBMaOokjrh82mT1v5fN38jzQnz9EA3KCdzCfoaAq58EALw_wcB)
+* [Deployed on Netlify](https://www.netlify.com/)
+
 
 
 
