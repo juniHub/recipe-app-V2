@@ -164,7 +164,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Juni Nguyen - [hellojuninguyen@gmail.com](hellojuninguyen@gmail.com)
+Juni Nguyen - [hello Juni](hellojuninguyen@gmail.com)
 
 Project Link: [https://github.com/juniHub/recipe-app-V2](https://github.com/juniHub/recipe-app-V2)
 
