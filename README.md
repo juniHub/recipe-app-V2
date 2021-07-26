@@ -79,6 +79,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+![responsive-recipe-screenshot](https://res.cloudinary.com/dafolrlpj/image/upload/v1627305373/gallery/jntpl4wdloljetv2w3vy.png)
+
 ![Juni-recipe-screenshot](https://res.cloudinary.com/dafolrlpj/image/upload/v1622118878/gallery/bbnhc9svllp8sp6bwlvb.png)
 
 
