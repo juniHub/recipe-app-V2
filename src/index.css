@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 body {
   
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Code Pro',
-  monospace;
-
+ font-family: 'Teko',
+ sans-serif;
 
 }
 
 a {
   text-decoration: none;
   color: inherit;
-
   font-size: small;
 
 }
@@ -24,9 +22,6 @@ a:hover {
   color: inherit;
 }
 
-img {
-  width: 100%;
-}
 
 button:focus {
   outline: none;
@@ -48,34 +43,34 @@ button:focus {
 }
 
 
-.active-recipe {
-  margin: 0 auto;
-  width: 100%;
+.recipe-desc{
+  font-size: 1rem;
 }
 
-.active-recipe-img {
-  height: 500px !important;
+.recipe-img {
+  height: 400px;
+  width: 400px;
 }
 
-.active-recipe-title {
+.recipe-title {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 1rem 0;
-  color: #001858;
+  color: #f9bc60;
 }
 
-.active-recipe-website {
+.recipe-website {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
-  color: #8bd3dd;
+  color: #2cb67d;
   text-decoration: none;
 }
 
-.active-recipe-website:hover {
-  border-bottom: 3px solid #001858;
-  color: #172c66;
+.recipe-website:hover {
+  
+  color: #f9bc60;
 }
 
 .alert {
@@ -120,17 +115,17 @@ button:focus {
 
 .ingredient-text {
   font-size: 1.5rem;
-  color: #001858;
+  color: #004643;
 }
 
 .ingredient-weight {
-  color: #f582ae;
+  color: #078080;
   font-size: 1.3rem;
 }
 
-.active-recipe-button {
+.recipe-button {
   border: solid 2px #f582ae;
-  color: #172c66;
+  color: #fff;
   background: transparent;
   padding: 0.2rem 0.9rem;
   margin: 0 0.2rem;

@@ -1,5 +1,5 @@
 
-const dark = "#232946";
+const dark = "#000000";
 const light = "#fffffe";
 
 const themeLight = {
