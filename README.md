@@ -74,7 +74,8 @@
 
 ## About The Project
 
-![Juni-recipe-screenshot](https://res.cloudinary.com/dafolrlpj/image/upload/v1622118878/gallery/bbnhc9svllp8sp6bwlvb.png)
+\*\*Am I responsive? YES!
+![Juni-recipe-screenshot](https://res.cloudinary.com/dafolrlpj/image/upload/v1628425005/gallery/gc0hp1ko6rlz2otgo3uw.png)
 
 ### Built With
 
