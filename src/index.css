@@ -56,8 +56,8 @@ button:focus {
 }
 
 .recipe-img {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%
 }
 
 .recipe-title {
@@ -139,7 +139,7 @@ button:focus {
 
 .recipe-button {
   border: solid 2px #f582ae;
-  color: #fff;
+  color: #004643;
   background: transparent;
   padding: 0.2rem 0.9rem;
   margin: 0 0.2rem;
