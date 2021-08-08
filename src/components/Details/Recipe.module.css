@@ -5,7 +5,9 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+
     padding: 1rem;
+    margin: 0.5rem;
    
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */

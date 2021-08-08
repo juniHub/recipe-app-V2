@@ -4,7 +4,8 @@ const light = "#fffffe";
 
 const themeLight = {
   background: light,
-  body: dark
+  body: dark,
+ 
 };
 
 const themeDark = {

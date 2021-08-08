@@ -2,11 +2,12 @@
 
 body {
   
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
- font-family: 'Teko',
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Teko',
  sans-serif;
+ 
 
 }
 
@@ -42,9 +43,16 @@ button:focus {
   display: block;
 }
 
+.heading-group{
+  height: 150px;
+ 
+}
 
 .recipe-desc{
   font-size: 1rem;
+  text-align: center;
+  margin:0.5rem;
+  
 }
 
 .recipe-img {
@@ -57,6 +65,7 @@ button:focus {
   letter-spacing: 2px;
   margin: 1rem 0;
   color: #f9bc60;
+  text-align: center;
 }
 
 .recipe-website {
@@ -75,7 +84,7 @@ button:focus {
 
 .alert {
   position: relative;
-  background-color: #f3d2c1;
+  background-color: gold;
   width: calc(100% - 0.4rem);
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -100,12 +109,17 @@ button:focus {
  
 }
 
+.recipe-btn-group{
+  text-align: center;
+  padding-top: 1rem;
+}
+
 .ingredient-list {
   margin-top: 1rem;
   background-color: #f3d2c1;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  width: 100%;
+  width: 95%;
 }
 
 .ingredient-list li {
