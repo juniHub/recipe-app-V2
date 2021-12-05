@@ -14,7 +14,7 @@
 [contributors-url]: https://github.com/juniHub/recipe-app-V2/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/juniHub/recipe-app-V2.svg?style=for-the-badge
 [forks-url]: https://github.com/juniHub/recipe-app-V2/network/members
-[stars-shield]: https://img.shields.io/github/stars/juniHub/recipe-app-V2/.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/juniHub/recipe-app-V2.svg?style=for-the-badge
 [stars-url]: https://github.com/juniHub/recipe-app-V2/stargazers
 [issues-shield]: https://img.shields.io/github/issues/juniHub/recipe-app-V2.svg?style=for-the-badge
 [issues-url]: https://github.com/juniHub/recipe-app-V2/issues
