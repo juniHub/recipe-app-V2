@@ -1,11 +1,29 @@
 .AppWrapper {
     margin: 0;
     padding: 0;
+  
 }
 .AppMain {
     height: 480px;
     margin: 0;
     padding: .5rem 1.5rem;
+   
+}
+
+.ImageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    
+}
+
+.CookingImg{
+    
+    
+    border-radius: 100%;
+    
 }
 
 .Header {

@@ -26,7 +26,7 @@ const Main = () =>
         <header className={classes.Header}>
             
         <h1>
-            <img alt="weather-icon" src="https://img.icons8.com/doodle/48/000000/cooking-book.png"/>
+            <img alt="cooking-book-icon" src="https://img.icons8.com/doodle/48/000000/cooking-book.png"/>
         </h1>
             
             <button aria-label="Left Align" aria-hidden="true" className={ classes.themeBtn } onClick={() => themeState.toggle()}>

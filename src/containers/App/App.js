@@ -4,13 +4,15 @@ import { v4 as uuidv4 } from 'uuid';
 import Advise from '../../Advise/Advise';
 
 import classes from './App.module.css';
-//import assetMapping from '../../assets/assetMapping.json';
+
 import Card from '../../elements/Card/Card';
 
 import Footer from '../../components/Footer/Footer';
 import Recipe from '../../components/Details/Recipe';
 
 import Alert from '../../components/Alert';
+
+import CookingImg from '../../assets/images/Cooking.svg';
 
 function App() {
   const [query, setQuery] = useState('');
@@ -48,8 +50,12 @@ function App() {
 
   return (
     <div className={classes.AppMain}>
+
+     <div className={classes.ImageContainer}>
     
-      
+            <img className={classes.CookingImg} alt="cooking" src={CookingImg} width="200" height="200"/>
+  
+    </div>
 
       <form onSubmit={onSubmit} style={{ marginBottom: '2rem' }}>
         { alert !== '' && <Alert alert={ alert } /> }
