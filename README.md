@@ -75,7 +75,8 @@
 ## About The Project
 
 ### Am I responsive? YES!
-![Juni-recipe-screenshot](https://res.cloudinary.com/dafolrlpj/image/upload/v1628425005/gallery/gc0hp1ko6rlz2otgo3uw.png)
+![Juni-recipe-screenshot1](https://res.cloudinary.com/dafolrlpj/image/upload/v1638796825/gallery/xg0xvg3ek787rjyhixql.png)
+![Juni-recipe-screenshot2](https://res.cloudinary.com/dafolrlpj/image/upload/v1628425005/gallery/gc0hp1ko6rlz2otgo3uw.png)
 
 ### Built With
 
